@@ -1,11 +1,13 @@
 <script>
   // Référence à l'élément input de type password
   var passwordInput = document.getElementById("password");
+
   // Référence au bouton pour afficher/cacher le mot de passe
   var showPasswordBtn = document.getElementById("show_password");
 
   // Ajout d'un écouteur d'événement click sur le bouton
-  showPasswordBtn.addEventListener("click", function() {
+  showPasswordBtn.addEventListener("click", function()
+  {
     // Vérification de l'attribut type de l'input
     if (passwordInput.type === "password") {
       // Changement de l'attribut type à "text" pour afficher le mot de passe

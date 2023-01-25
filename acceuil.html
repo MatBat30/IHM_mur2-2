@@ -1,167 +1,181 @@
 ﻿<!DOCTYPE html>
-<html>
-  <font face="Lato">
-    <head>
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="acceuil.css">
-      <title>Acceuil</title>
-    </head>
-    <body>
-      <div class="rectangle rectangle-1">
-        <div id="clock"></div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acceuil.css">
+    <title>Acceuil</title>
+    <style>
+        #dropzone {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+        }
+
+        #preview {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="rectangle rectangle-1">
+    <div id="clock"></div>
+    <div style="text-align: center;">
         <strong>
-          <center>
-            <p class="text">Information</p>
-          </center>
+            <p class="text">Information </p>
         </strong>
-        <div style="text-align: center;">
-          <center>
-            <h1>
-              <br>
-              <br> L'affichage du mur d'écran n'est actif que à certaines horraires (afin d'éviter la consomation d'éléctricité inutile) <br> Vous trouverez donc ci-dessous un tableau avec les horaires où les moniteurs sont allumés <br>
-            </h1>
-            <h2>
-              <table id="tableau">
+        <h1>
+            <br/>
+            L'affichage du mur d'écran n'est actif que à certaines horraires (afin d'éviter la consomation d'éléctricité inutile) <br/> Vous trouverez donc ci-dessous un tableau avec les horaires où les moniteurs sont allumés <br/>
+        </h1>
+        <h2>
+            <table id="tableau">
                 <thead>
-                  <tr>
+                <tr>
                     <th colspan="3">Horaires</th>
-                  </tr>
+                </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                <tr>
                     <td>07:30</td>
                     <td>08:10 </td>
-                    <td id="td2">
-                      <div>
-                        <input type="checkbox" id="td2">
-                      </div>
+                    <td>
+                        <div>
+                            <input type="checkbox" id="07301810">
+                        </div>
                     </td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>08:55</td>
                     <td>09:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="0905">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="08550905">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>09:50</td>
                     <td>10:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1005">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="09501050">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>10:55</td>
                     <td>11:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1105">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="10551105">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>11:55</td>
                     <td>13:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1305">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="11551305">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>13:55</td>
                     <td>14:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1405">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="13551405">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>14:55</td>
                     <td>15:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1505">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="14551505">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>15:50</td>
                     <td>16:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1605">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="1550">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>16:55</td>
                     <td>17:05</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1705">
-                      </div>
-                  </tr>
-                  <tr>
+                        <div>
+                            <input type="checkbox" id="16551705">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
                     <td>17:55</td>
                     <td>18:55</td>
                     <td>
-                      <div>
-                        <input type="checkbox" id="1855">
-                      </div>
-                  </tr>
+                        <div>
+                            <input type="checkbox" id="17551855">
+                        </div>
+                    </td>
+                </tr>
                 </tbody>
-              </table>
-            </h2>
-          </center>
-        </div>
-        <div class="rectangle rectangle-2">
-          <strong>
+            </table>
+        </h2>
+    </div>
+    <div class="rectangle rectangle-2">
+        <strong>
             <center>
-              <p class="text">Téléversement de l'image</p>
+                <p class="text">Téléversement de l'image</p>
             </center>
-          </strong>
-          <div>
-            <center>
-              <label for="file-input">
-                <img src="drag.png" alt="Choose a file" class="image-input">
-              </label>
-              <input type="file" id="file-input" style="display:none;">
-            </center>
-          </div>
-          <div class="rectangle rectangle-3">
-            <strong>
-              <center>
-                <p class="text">Prévisualisation</p>
-              </center>
-            </strong>
-          </div>
-          </div>            
-          <div id="clock">
-            <center>
-            <script>
-              function updateClock() {
-                var date = new Date();
-                var hours = date.getHours();
-                var minutes = date.getMinutes();
-                var seconds = date.getSeconds();
-                if (hours < 10) {
-                  hours = "0" + hours;
-                }
-                if (minutes < 10) {
-                  minutes = "0" + minutes;
-                }
-                if (seconds < 10) {
-                  seconds = "0" + seconds;
-                }
-                var clock = document.getElementById("clock");
-                clock.innerHTML = "Heure actuel: <br>" + hours + ":" + minutes + ":" + seconds;
-              }
-              setInterval(updateClock, 1000);
-            </script>
-            </center>
-          </div>
-        </div>
-      </div>
-      
-    </body>
+        </strong>
+        <div id="dropzone">Drop your image here</div>
+        <div id="preview"></div>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let dropzone = document.getElementById("dropzone");
+        let preview = document.getElementById("preview");
+
+        dropzone.addEventListener("dragover", function(e) {
+            e.preventDefault();
+        });
+
+        dropzone.addEventListener("drop", function(e) {
+            e.preventDefault();
+            let file = e.dataTransfer.files[0];
+            // Vérifie si le fichier déposé est une image
+            if (file.type.match(/image.*/)) {
+                let reader = new FileReader();
+                reader.onload = function() {
+                    let img = document.createElement("img");
+                    img.src = reader.result;
+                    preview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            } else {
+                alert("Please drop an image file.");
+            }
+        });
+    });
+
+
+</script>
+</body>
 </html>
