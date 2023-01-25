@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+  <font face="Lato">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="connexion.css">
+    <title>Page de connexion</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1>Connexion</h1>
+        <div class="Utilisateur">
+        <label for="Utilisateur">Utilisateur</label>
+          <select name="Utilisateur" id="Utilisateur">
+            <option value="directeur">Directeur</option>
+            <option value="cdi">CDI</option>
+            <option value="1">Vie scolaire</option>
+            <option value="2">Responsable culturel</option>
+        </select>        
+        </label>
+      </div>
+        <div class="password">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="password" name="password" required>
+            <button id="show_password" onclick="myFunction()">👀</button>
+            <script>
+            // Réf à l'élément input de type password
+            var passwordInput = document.getElementById("password");
+            // Réf au bouton pour afficher et cacher le mot de passe
+            var showPasswordBtn = document.getElementById("show_password");
+
+            // Ajout d'un écouteur d'événement click sur le bouton
+            showPasswordBtn.addEventListener("click", function() {
+            // Vérification de l'attribut type de l'input
+            if (passwordInput.type === "password") {
+            // Changement de l'attribut type à "text" pour afficher le mot de passe
+            passwordInput.type = "text";
+            // Changement du contenu du bouton pour indiquer qu'on peut cacher le mot de passe
+            showPasswordBtn.innerHTML = "🙈";
+            } else {
+            // Changement de l'attribut type à "password" pour cacher le mot de passe
+            passwordInput.type = "password";
+            // Changement du contenu du bouton pour indiquer qu'on peut afficher le mot de passe
+            showPasswordBtn.innerHTML = "👀";
+            }
+            });
+            </script>
+            <input id="Entrer" type="submit" value="Entrer">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

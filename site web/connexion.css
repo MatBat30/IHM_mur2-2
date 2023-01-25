@@ -1,0 +1,75 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post {
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+}
+
+/*
+body {
+  background-image: url('image.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#Utilisateur {
+    width: 357px;
+    border: 1px solid #ccc; /* bordure */
+    border: 1px solid #3fa118;
+    padding: 9px; /* espacement entre la bordure et le contenu */
+    border-radius: 5px; /* coins arrondis */
+}
+
+input[id="password"] {
+    width: 280px;
+    height: 12px;
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+    margin-bottom: 9px;
+}
+
+#show_password {
+    /*appearance: none; /* retire l'apparence native du bouton */
+    background-color: #4CAF50; /* couleur d'arriÃ¨re-plan */
+    font-size: medium;
+    padding: 7px 10px; /* espacement entre la bordure et le contenu */
+    border: none; /* retire la bordure */
+    border-radius: 5px;
+    cursor: pointer; /* trop bizarre sans Ã§a mdr*/
+}
+
+.password {
+    margin-top: 20px;
+    /* autres propriÃ©tÃ©s */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
